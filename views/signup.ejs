@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign Up for a New Account!</title>
+        <link rel="stylesheet" href="/styles/global.css" />
+    </head>
+    <body>
+        <div class="card">
+            <h1>Sign Up for a New Account!</h1>
+
+            <form action="/signup" method="POST">
+                <label for="password">Fullname</label>
+                <input
+                    type="fullname"
+                    name="fullname"
+                    id="fullname"
+                    placeholder="Full Name"
+                    required
+                />
+                <label for="username">Username</label>
+                <input
+                    type="text"
+                    name="username"
+                    id="username"
+                    placeholder="Enter your username"
+                    required
+                />
+                <label for="phone">Phone</label>
+                <input
+                    type="text"
+                    name="phone"
+                    id="phone"
+                    placeholder="Mobile Number"
+                    required
+                />
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    required
+                />
+                <label for="gender">Gender</label>
+                <div style="margin-top: -14px" class="row">
+                    <input type="radio" value="male" name="gender" id="male" />
+                    <label for="male">Male</label>
+
+                    <input
+                        type="radio"
+                        value="female"
+                        name="gender"
+                        id="female"
+                    />
+                    <label for="female">Female</label>
+                </div>
+                <button type="submit">Sign Up</button>
+                <div class="error">
+                    <% if (error) { %>
+                    <p><%= error %></p>
+                    <% } %>
+                </div>
+                <a href="/login"> Already have an account? Login! </a>
+            </form>
+        </div>
+    </body>
+</html>

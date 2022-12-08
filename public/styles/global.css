@@ -1,0 +1,95 @@
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.card {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input,
+button,
+label {
+    display: block;
+    margin: 12px 0px;
+}
+
+input {
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    color: rgb(26, 98, 167);
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(26, 98, 167);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: rgb(26, 98, 167);
+    opacity: 0.8;
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.error {
+    color: red;
+}
+
+.info {
+    color: rgb(26, 98, 167);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(26, 98, 167);
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+}
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+td:hover {
+    transition: 0.2s;
+    cursor: pointer;
+    background-color: #e0e0e0;
+}
